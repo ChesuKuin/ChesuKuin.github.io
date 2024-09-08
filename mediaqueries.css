@@ -12,13 +12,17 @@
   }
 }
 
+/* Correct media query for small screens */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
+}
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
