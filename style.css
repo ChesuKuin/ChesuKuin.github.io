@@ -67,17 +67,6 @@ a:hover {
   display: flex !important; /* or block, depending on your layout */
 }
 
-/* Show the hamburger menu and hide the desktop navigation on smaller screens */
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none !important;
-  }
-
-  #hamburger-nav {
-    display: flex !important;
-  }
-}
-
 
 .hamburger-menu {
     position: relative;
