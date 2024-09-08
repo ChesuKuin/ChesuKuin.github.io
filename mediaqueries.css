@@ -1,24 +1,18 @@
 /* Media Queries */
 
-/* For screens up to 1400px - General adjustments for medium screens */
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+/* For screens larger than 1200px - Show desktop nav and hide hamburger menu */
+@media screen and (min-width: 1200px) {
+  #desktop-nav {
+    display: flex; /* Show desktop navigation */
   }
 
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
-  #contact,
-  #projects {
-    height: fit-content;
+  #hamburger-nav {
+    display: none; /* Hide hamburger menu */
   }
 }
 
-/* For screens up to 1200px - Hide desktop nav, show hamburger menu */
-@media screen and (max-width: 1200px) {
+/* For screens smaller than 1200px - Hide desktop nav and show hamburger menu */
+@media screen and (max-width: 1199px) {
   #desktop-nav {
     display: none; /* Hide desktop navigation */
   }
@@ -26,42 +20,9 @@
   #hamburger-nav {
     display: flex; /* Show hamburger menu */
   }
-
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  #profile,
-  .section-container {
-    display: block;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  section,
-  .section-container {
-    height: fit-content;
-  }
-
-  section {
-    margin: 0 5%;
-  }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-
-  .about-containers {
-    margin-top: 0;
-  }
 }
 
-/* For screens up to 600px - Additional styling for very small screens */
+/* For screens smaller than 600px - Mobile-specific styling */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -124,6 +85,12 @@
   .title {
     font-size: 2rem;
   }
+
+  .text-container {
+    text-align: justify;
+  }
+}
+
 
   .text-container {
     text-align: justify;
