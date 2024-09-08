@@ -12,21 +12,21 @@
   }
 /* Default - Desktop view */
 #hamburger-nav {
-  display: none;
+  display: none !important;
 }
 
 #desktop-nav {
-  display: flex; /* or block, depending on your layout */
+  display: flex !important; /* or block, depending on your layout */
 }
 
 /* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none !important;
   }
 
   #hamburger-nav {
-    display: flex;
+    display: flex !important;
   }
 }
 
