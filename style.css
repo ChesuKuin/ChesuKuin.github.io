@@ -25,7 +25,7 @@ a, .btn {
 
 /* DESKTOP NAV */
 nav, .nav-links {
-    display: flex;
+    display: flex !important;
 }
 
 nav {
@@ -60,21 +60,21 @@ a:hover {
 /* HAMBURGER MENU */
 /* Hide the hamburger menu and show the desktop navigation by default */
 #hamburger-nav {
-  display: none;
+  display: none !important;
 }
 
 #desktop-nav {
-  display: flex; /* or block, depending on your layout */
+  display: flex !important; /* or block, depending on your layout */
 }
 
 /* Show the hamburger menu and hide the desktop navigation on smaller screens */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none !important;
   }
 
   #hamburger-nav {
-    display: flex;
+    display: flex !important;
   }
 }
 
