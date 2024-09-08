@@ -58,9 +58,26 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-.hamburger-nav {
-    display: none;
+/* Hide the hamburger menu and show the desktop navigation by default */
+#hamburger-nav {
+  display: none;
 }
+
+#desktop-nav {
+  display: flex; /* or block, depending on your layout */
+}
+
+/* Show the hamburger menu and hide the desktop navigation on smaller screens */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
 
 .hamburger-menu {
     position: relative;
