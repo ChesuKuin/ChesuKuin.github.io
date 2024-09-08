@@ -1,5 +1,22 @@
 /* Media Queries */
 
+/* For screens up to 1400px - General adjustments for medium screens */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
 /* For screens up to 1200px - Hide desktop nav, show hamburger menu */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -8,6 +25,39 @@
 
   #hamburger-nav {
     display: flex; /* Show hamburger menu */
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
   }
 }
 
@@ -79,4 +129,3 @@
     text-align: justify;
   }
 }
-
