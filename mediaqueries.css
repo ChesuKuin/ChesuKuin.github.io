@@ -9,6 +9,11 @@
   #hamburger-nav {
     display: none; /* Hide hamburger menu */
   }
+
+  .icon {
+    width: 32px; /* Resize icons for desktop */
+    height: 32px;
+  }
 }
 
 /* For screens smaller than 1200px - Hide desktop nav and show hamburger menu */
@@ -19,6 +24,11 @@
 
   #hamburger-nav {
     display: flex; /* Show hamburger menu */
+  }
+
+  .icon {
+    width: 28px; /* Slightly smaller icons for smaller screens */
+    height: 28px;
   }
 }
 
@@ -89,10 +99,9 @@
   .text-container {
     text-align: justify;
   }
-}
 
-
-  .text-container {
-    text-align: justify;
+  .icon {
+    width: 24px; /* Smaller icons for mobile */
+    height: 24px;
   }
 }
